@@ -5,18 +5,32 @@ footer {
 #footer_items {
     display: flex;
     justify-content: space-between;
-    padding: 0px 8% 24px 8%;
-    align-items: center;
+    padding: 20px 8%;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Isso permite que os itens quebrem para a próxima linha quando não couberem */
 }
 
-#copyright {
-    color: var(--color-neutral-1);;
-    font-weight: 500;
+#footer_items .ftco-footer-widget {
+    width: calc(33.33% - 20px); /* Defina a largura dos itens conforme necessário */
+    text-align: left;
+    margin-bottom: 20px; /* Espaçamento entre os itens */
 }
 
 @media screen and (max-width: 600px) {
-    #footer_items {
-        flex-direction: column;
-        gap: 20px;
+    #footer_items .ftco-footer-widget {
+        width: 100%; /* Em telas menores, ocupa toda a largura */
     }
 }
+
+.row-mb-5{
+display: flex;
+gap: 35%;
+font-size: 1em;
+}
+
+.ftco-footer-widget-mb-4 ul li{
+list-style: none;
+
+
+}
+
