@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+#mapa {
+    width: 500px; /* Largura desejada */
+    height: 400px; /* Altura desejada */
+    margin-top: 40px; /* Distância do topo */
+    margin-left: 100px; /* Distância da esquerda */
+    border: 2px solid #ffe8b4; /* Contorno */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+
+
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,6 +25,8 @@
     <title>Landing page</title>
 </head>
 <body>
+
+        <!--   Cabeçalho    -->
     <header>
         <nav id="navbar">
             <img class="" id="nav_logo" src="src/images/NR13.png"></i>
@@ -20,13 +36,19 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#menu">Preço</a>
+                    <a href="#Recursos">Recursos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonials">Sobre</a>
+                    <a href="#FAQ">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonials">Contato</a>
+                    <a href="#Depoimentos">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Planos">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Sobre">Sobre</a>
                 </li>
             </ul>
 
@@ -55,15 +77,32 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
+            <button class="btn-default" id="btnEntrar">
                 Entrar
             </button>
+            
+
+<script>
+    // Seleciona o botão pelo ID
+    var btnEntrar = document.getElementById('btnEntrar');
+
+    // Adiciona um ouvinte de evento de clique ao botão
+    btnEntrar.addEventListener('click', function() {
+        // Redireciona para a URL desejada
+        window.location.href = 'https://www.rglsafety.com/RGL/login.php';
+    });
+</script>
+
+            
         </div>
     </header>
 
+
+    <!--   Proposta Única de Valor     -->
+    <!-- INICIO-->
     <main id="content">
         <section id="home">
-            <div class="shape"></div>
+
             <div id="cta">
                 <h1 class="title">
                     Tecnologia na gestão de 
@@ -88,27 +127,35 @@
                 </div>
 
                 <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://api.whatsapp.com/send?phone=5519992323010&text=">
+                        <i  class="fa-brands fa-whatsapp"></i>
                     </a>
 
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.youtube.com/channel/UCM-9blE6k2BtvgkJeiFOYqg">
+                        <i class="fa-brands fa-youtube"></i>
                     </a>
 
-                    <a href="">
+                    <a href="https://www.linkedin.com/company/rglsafety/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/safetyrgl/">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </div>
             </div>
 
-            <div id="banner">
+            <div id="logo">
                 <img src="src/images/IconRender.png" alt="">
             </div>
-        </section>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883982.4062185397!2d-48.45091269603127!3d-22.741130334735594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89b5576f6d6e3%3A0xd92cb027ecf8ad0b!2sRGL+Safety!5e0!3m2!1spt-BR!2sbr!4v1537278725700" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            
+        </section >
 
+
+        <!--   Principais Recursos  e Beneficios      -->
+            <!-- RECURSOS-->
         <section id="menu">
-            <h2 class="section-title">O QUE FAZEMOS</h2>
+            <h2   id="Recursos" class="section-title">Principais Recursos e Benefícios</h2>
             <h3 class="section-subtitle">Oferecemos soluções na gestão de NR's. Nosso software controla todo o fluxo de vida da documentação dos seus equipamentos, disparando ações para que os mesmos sejam regularizados.</h3>
 
             <div id="dishes">
@@ -158,6 +205,277 @@
             </div>
         </section>
 
+        <!--   FAQ      -->
+    <!-- FAQ-->
+        <section id="testimonials">
+            <img id="FAQ" src="src/images/Vetor_Think.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Perguntas Frequentes
+                </h2>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--   Depoimentos      -->
+            <!-- DEPOIMENTOS-->
+        <section id="testimonials">
+            <div id="testimonials_content">
+                <h2 id="Depoimentos"class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="testimonials_content">
+                <h2 class="section-title" style="visibility: hidden;">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle" style="visibility: hidden;">
+                    O que os clientes falam sobre nós
+                </h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            
+        </section>
+
+        <!-- preços e planos -->
+            <!-- PLANOS-->
+        <section id="menu" class="PRECO">
+            <h1  id="Planos"class="section-title">Preços e planos</h1>
+
+            <div id="dishes">
+                <div class="dish">
+
+
+                    <img src="src/images/BASICO.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Lorem Ipsum
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/MEDIO.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Lorem Ipsum
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/PRO.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Lorem Ipsum
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$30,00</h4>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- SOBRE-->
         <section id="testimonials">
             <div class="feedback">
 
@@ -188,7 +506,7 @@
             </div>
 
             <div id="testimonials_content">
-                <h2 class="section-title">
+                <h2 id="Sobre"class="section-title">
                     SOBRE NÓS
                 </h2>
                 <h3 class="section-subtitle">
@@ -269,13 +587,18 @@
             </div>
             
             <div class="social-media-buttons mt-3 text-center">
-                <a href="">
-                    <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://api.whatsapp.com/send?phone=5519992323010&text=">
+                    <i  class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
+
+                <a href="https://www.youtube.com/channel/UCM-9blE6k2BtvgkJeiFOYqg">
+                    <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="">
+
+                <a href="https://www.linkedin.com/company/rglsafety/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/safetyrgl/">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -290,6 +613,16 @@
     
     
 
-    <script src="src/javascript/script.js"></script>
+    <script src="src/javascript/script.js">
+ // Seleciona o botão pelo ID
+ var btnEntrar = document.getElementById('btnEntrar');
+
+// Adiciona um ouvinte de evento de clique ao botão
+btnEntrar.addEventListener('click', function() {
+    // Redireciona para a URL desejada
+    window.location.href = 'https://www.rglsafety.com/RGL/login.php';
+});
+
+    </script>
 </body>
 </html>
