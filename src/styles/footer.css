@@ -25,7 +25,7 @@ footer {
 .row-mb-5{
 display: flex;
 gap: 35%;
-font-size: 0.5em;
+font-size: 1em;
 }
 
 .ftco-footer-widget-mb-4 ul li{
@@ -33,4 +33,14 @@ list-style: none;
 
 
 }
+footer a {
+    color: #333; /* Cor dos links */
+    text-decoration: none; /* Removendo o sublinhado dos links */
+    cursor: pointer; /* Mudando o cursor ao passar sobre os links */
+}
 
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 0.5em; /* Tamanho da fonte reduzido para dispositivos móveis */
+    }
+}
